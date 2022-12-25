@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Calculo de IMC</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Calculadora de IMC</h1>
+        <form class="formulare">
+            <div class="form-group">
+                <div class="group">
+                    <label for="weight">Peso</label>
+                    <input type="number" name="weight" id="weight" placeholder="64"  required>
+                </div>
+
+                <div class="group">
+                    <label for="height">Altura</label>
+                    <input type="number" name="height" id="height" placeholder="1.72" required>
+                </div>
+            </div>
+        </form>
+
+        <button class="calculator" onClick="calculate()">Calcular</button>
+
+        <div class="result" id="result">
+            <h2 class="result-title" id="result-title">Seu IMC é de 1.2</h2>
+            <p class="result-description" id="result-description">Bom</p>
+        </div>
+    </div>
+
+    <script src="script/app.js"></script>
+</body>
+</html>
